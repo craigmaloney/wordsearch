@@ -1,0 +1,75 @@
+/*
+ * Sample CSS to start with screen and print rendering.
+ * It also supports a hidden solution that is revealed
+ * with a button click. This is animated to outline the
+ * possibilities.
+ *
+ * You may want to adjust font sizes and overall width
+ * of display, maybe font and colors. There are comments
+ * in between the CSS marking the sweet spots.
+ */
+@media print {
+  section {page-break-after: always;}
+  /* save some ink */
+  svg { width:10cm; height: 10cm}
+}
+
+@media screen {
+  /* more or less the same size in combination
+   * with SVG's viewbox attribute
+   */
+  svg { width:35em; height:35em; }
+}
+
+body {
+	/* Change font here */
+	font-family:sans-serif;
+	margin-left:auto;
+	margin-right:auto;
+	/* A common width for a block of text.
+	 * This is the baseline for all relative
+	 * sizes
+	 */
+	width:35em;
+}
+
+table {
+	/* Adjust this according to your grid size.
+	 * 10-15 rows/ columns look good with 35em
+	 * total width and 180% font size.
+	 *
+	 * Larger grid size requires smaller fonts.
+	 * Smaller grids look ugly with fonts larger
+	 * than 200%.
+	 */
+	font-size:180%;
+}
+
+td {
+	width:1.3em;
+	text-align:center;
+}
+
+ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+/* Start hidden
+ */
+.solution {
+	opacity:0;
+	max-height:0px;
+}
+
+/*
+ * Animate two properties in a sequence to first make room and fade
+ * in afterwards.
+ */
+.m-fadeIn {
+  visibility: visible;
+  max-height: 100vh;
+  opacity: 1;
+  transition:  max-height linear 350ms, visibility 0s linear 0s, opacity 350ms linear 200ms;
+}
