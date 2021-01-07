@@ -428,6 +428,7 @@ sub print_solution_svg() {
 	print "  </text>\n";
 	
 	print "</svg>\n";
+	$print_heading -> ("Grid");
 	print("Intersections: $intersections\n") if $debug;
 }
 

@@ -69,7 +69,7 @@ ul {
  */
 .m-fadeIn {
   visibility: visible;
-  max-height: 100vh;
+  max-height: initial;
   opacity: 1;
   transition:  max-height linear 350ms, visibility 0s linear 0s, opacity 350ms linear 200ms;
 }
