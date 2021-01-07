@@ -1,3 +1,10 @@
+1.4.2
+- Added --html to render HTML to STDOUT
+- Added sample CSS
+- Perl is now strict and uses warnings
+- Whitespaces/ indentation
+- fancy README
+
 1.4.1
 FEATURES:
 - Added --no_normalize to aid in making number searches

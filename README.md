@@ -5,6 +5,8 @@ Word Search creation in Perl. Renders on the command line as pure
 text but also as HTML with unfolding solution. The latter can also
 be rendered as SVG.
 
+![Terminal Output](snap_term.png)
+
 ```
 Usage: ./wordsearch.pl [OPTION] 
 Creates a word search puzzle.
@@ -42,3 +44,7 @@ Creates a word search puzzle.
  --version    Display the version number.
  --help        Display this help file.
 ```
+
+![HTML page with button](snap_html.png)
+
+![Solution as SVG](snap_svg.png)
