@@ -1,4 +1,5 @@
 1.4.2
+Thanks to Onkobu Tanaake for these changes:
 - Added --html to render HTML to STDOUT
 - Added sample CSS
 - Perl is now strict and uses warnings

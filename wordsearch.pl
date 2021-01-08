@@ -12,7 +12,7 @@ use warnings;
 use open ':utf8';
 use open ':std';
 
-my $version_number = "1.4.3";
+my $version_number = "1.4.2";
 use Getopt::Long;
 
 # DEFAULTS
